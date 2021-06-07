@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/DP_Chat"
+            android:icon="@drawable/ic_chat"
+            android:title="Chat" />
+        <item android:id="@+id/DP_Job_History"
+            android:icon="@drawable/ic_track"
+            android:title="Job History" />
+        <item android:id="@+id/DP_Emergency"
+            android:icon="@drawable/ic_emergency"
+            android:title="Emergency" />
+        <item android:id="@+id/DP_Help"
+            android:icon="@drawable/ic_help"
+            android:title="Help" />
+        <item android:id="@+id/DP_SignOut"
+            android:icon="@drawable/ic_signout"
+            android:title="Sign Out" />
+    </group>
+
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_request"
+            android:icon="@drawable/ic_request"
+            android:title="Request" />
+        <item android:id="@+id/nav_track"
+            android:icon="@drawable/ic_track"
+            android:title="Track" />
+        <item android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat"
+            android:title="Support" />
+        <item android:id="@+id/C_SignOut"
+            android:icon="@drawable/ic_signout"
+            android:title="Sign Out" />
+    </group>
+
+</menu>

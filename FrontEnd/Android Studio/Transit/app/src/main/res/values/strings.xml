@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Transit</string>
+    <string name="ip_address">10.26.3.105</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="DriverLoadSize">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>Heavy</item>
+    </string-array>
+</resources>

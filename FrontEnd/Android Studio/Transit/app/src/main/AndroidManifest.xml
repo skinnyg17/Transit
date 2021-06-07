@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.transit">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".CustomerScan" />
+        <activity android:name=".DriverUnload" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity android:name=".DriverTransportPage" />
+        <activity android:name=".DriverWorkFlow" />
+        <activity android:name=".CustomerPay" />
+        <activity android:name=".ManagerAssignJob.ManagerAssignJobToDriver" />
+        <activity android:name=".GeneralScanPage" />
+        <activity android:name=".GeneralChatPage" />
+        <activity android:name=".CustomerRequest" />
+        <activity android:name=".DriverLoadPage" />
+        <activity android:name=".DriverMainPage" />
+        <activity android:name=".ManagerMain.ManagerJobSituationPage" />
+        <activity android:name=".ManagerDriverInfo.ManagerDriverInfoPage" />
+        <activity android:name=".ManagerRequestList.ManagerRequstListPage" />
+        <activity android:name=".CusServicePage" />
+        <activity android:name=".ManagerMain.ManagerPage" />
+        <activity android:name=".DriverPage" />
+        <activity android:name=".DriverJobHistory" />
+        <activity android:name=".CustomerPage" />
+        <activity android:name=".CustomerTrack" />
+        <activity android:name=".CusService_Handling_error" />
+        <activity android:name=".CuService_Help" />
+
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".JobLocationService"
+            android:stopWithTask="true" />
+        <service
+            android:name=".JourneyLocationService"
+            android:stopWithTask="true" />
+    </application>
+
+</manifest>

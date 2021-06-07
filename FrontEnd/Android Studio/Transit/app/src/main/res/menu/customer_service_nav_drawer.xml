@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/CSP_chat"
+            android:icon="@drawable/ic_chat"
+            android:title="Chat" />
+
+        <item android:id="@+id/CSP_help"
+            android:icon="@drawable/ic_chat"
+            android:title="Help" />
+        <item android:id="@+id/CSP_shipping"
+            android:icon="@drawable/ic_handle"
+            android:title="Handling shipping error"/>
+        <item android:id="@+id/CSP_SignOut"
+            android:icon="@drawable/ic_signout"
+            android:title="Sign Out" />
+
+    </group>
+
+</menu>
